@@ -122,7 +122,7 @@ const Formulario = () => {
                 {msg && <Alertas alerta={alerta} />}
 
                 <form
-                    className='bg-gray-900 py-10 px-5 mb-10 lg:mb-0 shadow-2xl rounded-xl border-2 border-blue-900'
+                    className='bg-gray-900 mt-15 py-10 px-5 mb-10 lg:mb-0 shadow-2xl rounded-xl border-2 border-blue-900'
                     onSubmit={handleSubmit}
                 >
 

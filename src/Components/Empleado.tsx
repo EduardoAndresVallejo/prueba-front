@@ -41,7 +41,7 @@ const Empleados = ({ empleado }: Props) => {
             </p>
 
             {/* Botones */}
-            <div className="flex justify-between sm:flex-col my-7 gap-4">
+            <div className="flex flex-col lg:justify-between lg:flex-row my-7 gap-4">
                 <button
                     type="button"
                     className="cursor-pointer py-2 px-10 bg-blue-600 hover:bg-blue-500 text-white uppercase font-bold rounded-lg shadow-lg shadow-blue-600/50 transition-colors"
