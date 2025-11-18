@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "flowbite";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+@import "flowbite/src/themes/default";
+
+
+/* Asegura que la clase custom-scrollbar aplique el overflow */
+.custom-scrollbar {
+    /* Propiedad estándar para navegadores como Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #3b82f6 #1f2937; /* thumb (azul) y track (fondo gris oscuro) */
+}
+
+/* Estilos para navegadores basados en Webkit (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra */
+    height: 8px; /* Altura, si necesitaras scroll horizontal */
+}
+
+/* Estilo del Fondo/Track de la barra */
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1f2937; /* bg-gray-800 */
+    border-radius: 10px;
+}
+
+/* Estilo del Thumb (la parte que mueves) */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #3b82f6; /* bg-blue-500 */
+    border-radius: 10px;
+    /* Da un pequeño borde oscuro para separarlo visualmente del track */
+    border: 2px solid #1f2937; 
+}
+
+/* Estilo al pasar el ratón sobre el Thumb */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #60a5fa; /* Azul más claro al hacer hover */
+}
