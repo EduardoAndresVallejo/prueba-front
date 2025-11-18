@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const empleadosAPI = createApi({
   reducerPath: "empleadosAPI",
   baseQuery: fetchBaseQuery({
-    baseUrl: "https://natural-illumination-production-7ac1.up.railway.app/api",
+    baseUrl: "https://prueba-backend-production-b111.up.railway.app//api",
     validateStatus: (response, _) => {
       return response.status >= 200 && response.status < 300;
     }
